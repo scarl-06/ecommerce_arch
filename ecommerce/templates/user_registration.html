@@ -1,0 +1,13 @@
+<!-- registration.html -->
+{% extends "base.html" %}
+
+{% block title %}User Registration - My E-Commerce Website{% endblock %}
+
+{% block content %}
+    <h1>User Registration</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+ {% endblock %}

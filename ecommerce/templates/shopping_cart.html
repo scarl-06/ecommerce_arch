@@ -1,0 +1,17 @@
+<!-- cart.html -->
+{% extends "base.html" %}
+
+{% block title %}Shopping Cart - My E-Commerce Website{% endblock %}
+
+{% block content %}
+    <h1>Shopping Cart</h1>
+    <ul>
+        {% for item in cart_items %}
+            <li>
+                {{ item.product.name }} (Quantity: {{ item.quantity }})
+            </li>
+        {% endfor %}
+    </ul>
+    <p>Total: ${{ cart_total }}</p>
+    <!-- Add checkout button and other cart functionalities here -->
+ {% endblock %}

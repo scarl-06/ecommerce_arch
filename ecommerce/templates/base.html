@@ -1,0 +1,26 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My E-Commerce Website{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+    </header>
+    
+    <nav>
+        <!-- Navigation menu goes here -->
+    </nav>
+    
+    <main>
+        {% block content %}
+        <!-- Content of individual pages will be inserted here -->
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
